@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Darker gray for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    border: 3px solid #1e1e1e; /* Gives the illusion of a thinner scrollbar with padding */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Slightly lighter on hover */
+}
+
+/* For Firefox */
+scrollbar-color: #555 #1e1e1e; /* Thumb color, Track color */
+scrollbar-width: thin; /* Makes the scrollbar thinner */
